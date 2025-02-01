@@ -7,7 +7,7 @@ const projects = [
     description:
       "A React-based web application showcasing a collection of games with details and specifications using a third party API",
     image: "/gamestore.png?height=200&width=300",
-    liveLink: "https://sulaimanalfareeth.vercel.app/",
+    liveLink: "https://gamestore-sulaiman-alfareeths-projects.vercel.app/",
     githubLink: "https://github.com/oldstone7/gamestore",
     techStack: ["React","Tailwind CSS","RAWG API"],
   },
