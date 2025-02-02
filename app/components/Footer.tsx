@@ -14,7 +14,7 @@ export default function Footer() {
           <p>&copy; {new Date().getFullYear()} Sulaiman Alfareeth. All rights reserved.</p>
           <div className="flex space-x-4">
             <a
-              href="https://github.com/yourusername"
+              href="https://github.com/oldstone7"
               target="_blank"
               rel="noopener noreferrer"
               className="hover:text-gray-400"
@@ -22,7 +22,7 @@ export default function Footer() {
               <Github className="w-6 h-6" />
             </a>
             <a
-              href="https://linkedin.com/in/yourusername"
+              href="https://linkedin.com/in/m-sulaiman-alfareeth/"
               target="_blank"
               rel="noopener noreferrer"
               className="hover:text-gray-400"
@@ -30,7 +30,7 @@ export default function Footer() {
               <Linkedin className="w-6 h-6" />
             </a>
             <a
-              href="https://twitter.com/yourusername"
+              href="https://twitter.com/MAlfareeth"
               target="_blank"
               rel="noopener noreferrer"
               className="hover:text-gray-400"
