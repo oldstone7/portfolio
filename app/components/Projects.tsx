@@ -15,7 +15,7 @@ const projects = [
     title: "CEO Dashboard",
     description: "An admin dashboard for monitoring key performance indicators and tracking company's performance with finance, sales and operations modules and a chat application for communicating and sharing files with team members.",
     image: "/ceodb.png",
-    liveLink: "ceodb-production.up.railway.app",
+    liveLink: "https://ceodb-production.up.railway.app",
     githubLink: "https://github.com/oldstone7/ceodb",
     techStack: ["HTML", "CSS", "JavaScript", "Django REST Framework", "PostgreSQL"],
   },
