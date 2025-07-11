@@ -3,6 +3,32 @@ import { ExternalLink, Github } from "lucide-react"
 
 const projects = [
   {
+    title: "CalendarBot",
+    description:
+      "A conversational agent to schedule/manage events, appointments and assist users with their Google calendar.",
+    image: "/calendarbot.png?height=200&width=300",
+    liveLink: "https://calendarbot-tailortalk.streamlit.app/",
+    githubLink: "https://github.com/oldstone7/calendarbot",
+    techStack: ["Python FastAPI", "Streamlit", "Langchain", "Google’s genAI"],
+  },
+  {
+    title: "Smart AI Todo",
+    description:
+      "An AI-powered task management system that intelligently prioritizes,advices and enhances your tasks based on your daily context and workload.",
+    image: "/smart_todo.png?height=200&width=300",
+    liveLink: "",
+    githubLink: "https://github.com/oldstone7/smart_todo",
+    techStack: ["Python FastAPI", "Streamlit", "Langchain", "Google’s genAI"],
+  },
+  {
+    title: "CEO Dashboard",
+    description: "An admin dashboard for monitoring key performance indicators and tracking company's performance with finance, sales and operations modules.",
+    image: "/ceodb.png",
+    liveLink: "https://ceodb-production.up.railway.app",
+    githubLink: "https://github.com/oldstone7/ceodb",
+    techStack: ["HTML", "CSS", "JavaScript", "Django REST Framework", "PostgreSQL"],
+  },
+  {
     title: "GameStore",
     description:
       "A React-based web application showcasing a collection of games with details and specifications using a third party API",
@@ -10,14 +36,6 @@ const projects = [
     liveLink: "https://gamestore-sulaiman-alfareeths-projects.vercel.app/",
     githubLink: "https://github.com/oldstone7/gamestore",
     techStack: ["React","Tailwind CSS","RAWG API"],
-  },
-  {
-    title: "CEO Dashboard",
-    description: "An admin dashboard for monitoring key performance indicators and tracking company's performance with finance, sales and operations modules and a chat application for communicating and sharing files with team members.",
-    image: "/ceodb.png",
-    liveLink: "https://ceodb-production.up.railway.app",
-    githubLink: "https://github.com/oldstone7/ceodb",
-    techStack: ["HTML", "CSS", "JavaScript", "Django REST Framework", "PostgreSQL"],
   },
   {
     title: "SmallTalk",
