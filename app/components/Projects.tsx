@@ -12,11 +12,20 @@ const projects = [
     techStack: ["Python FastAPI", "Streamlit", "Langchain", "Google’s genAI"],
   },
   {
+    title: "AdmyBrand SaaS",
+    description:
+      "AdmyBrand is an AI-powered SaaS for marketing, branding, and customer engagement.",
+    image: "/admybrand.png?height=200&width=300",
+    liveLink: "https://ad-my-brand-saas.vercel.app/",
+    githubLink: "https://github.com/oldstone7/ADmyBrand-SaaS",
+    techStack: ["Next.js","Tailwind CSS","TypeScript"],
+  },
+  {
     title: "Smart AI Todo",
     description:
       "An AI-powered task management system that intelligently prioritizes,advices and enhances your tasks based on your daily context and workload.",
     image: "/smart_todo.png?height=200&width=300",
-    liveLink: "",
+    liveLink: null,
     githubLink: "https://github.com/oldstone7/smart_todo",
     techStack: ["Python FastAPI", "Streamlit", "Langchain", "Google’s genAI"],
   },
@@ -80,15 +89,22 @@ export default function Projects() {
                   </div>
                 </div>
                 <div className="flex justify-between">
-                  <a
-                    href={project.liveLink}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex items-center text-blue-600 hover:text-blue-800 dark:text-blue-400 dark:hover:text-blue-300"
-                  >
-                    <ExternalLink className="w-4 h-4 mr-1" />
-                    Live URL
-                  </a>
+                  {project.liveLink ? (
+                    <a
+                      href={project.liveLink}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex items-center text-blue-600 hover:text-blue-800 dark:text-blue-400 dark:hover:text-blue-300"
+                    >
+                      <ExternalLink className="w-4 h-4 mr-1" />
+                      Live URL
+                    </a>
+                  ) : (
+                    <span className="flex items-center text-gray-500 dark:text-gray-500">
+                      <ExternalLink className="w-4 h-4 mr-1" />
+                      Not hosted
+                    </span>
+                  )}
                   <a
                     href={project.githubLink}
                     target="_blank"

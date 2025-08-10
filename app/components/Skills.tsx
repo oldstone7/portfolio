@@ -3,22 +3,26 @@ import {
   SiHtml5,
   SiCss3,
   SiJavascript,
+  SiTypescript,
   SiReact,
   SiNextdotjs,
   SiTailwindcss,
   SiNodedotjs,
+  SiStreamlit,
   SiDjango,
+  SiFastapi,
   SiExpress,
   SiPostgresql,
+  SiMongodb,
   SiMysql,
   SiPhp,
   SiJquery,
   SiBootstrap,
-  SiStreamlit,
   SiPython,
   SiGit,
   SiDocker,
-  SiCpanel
+  SiCpanel,
+  SiPostman
 } from "react-icons/si"
 import { FaGitAlt } from "react-icons/fa"
 import { BiLogoPostgresql } from "react-icons/bi"
@@ -30,14 +34,14 @@ const skills = [
       [
         { name: "HTML", icon: <SiHtml5 className="w-5 h-5 text-orange-500" /> },
         { name: "CSS", icon: <SiCss3 className="w-5 h-5 text-blue-500" /> },
-        { name: "JavaScript", icon: <SiJavascript className="w-5 h-5 text-yellow-500" /> },
-        { name: "jQuery", icon: <SiJquery className="w-5 h-5 text-blue-700" /> },
+        { name: "TypeScript", icon: <SiTypescript className="w-5 h-5 text-blue-600" /> },
+        { name: "Streamlit", icon: <SiStreamlit className="w-5 h-5 text-blue-500" /> },
       ],
       [
         { name: "React", icon: <SiReact className="w-5 h-5 text-blue-400" /> },
+        { name: "jQuery", icon: <SiJquery className="w-5 h-5 text-blue-700" /> },
         { name: "Bootstrap", icon: <SiBootstrap className="w-5 h-5 text-purple-600" /> },
         { name: "Tailwind CSS", icon: <SiTailwindcss className="w-5 h-5 text-teal-500" /> },
-        { name: "Streamlit", icon: <SiStreamlit className="w-5 h-5 text-red-500" /> },
       ]
     ],
     icon: <Palette className="w-6 h-6 text-blue-500" />,
@@ -46,25 +50,27 @@ const skills = [
     category: "Backend",
     items: [
       [
+        { name: "PHP", icon: <SiPhp className="w-5 h-5 text-purple-500" /> },
+        { name: "JavaScript", icon: <SiJavascript className="w-5 h-5 text-yellow-500" /> },
         { name: "Node.js", icon: <SiNodedotjs className="w-5 h-5 text-green-500" /> },
-        { name: "Express.js", icon: <SiExpress className="w-5 h-5 text-gray-500" /> },
         { name: "Next.js", icon: <SiNextdotjs className="w-5 h-5 text-black dark:text-white" /> },
-        { name: "Django", icon: <SiDjango className="w-5 h-5 text-green-700" /> },
       ],
       [
-        { name: "PHP", icon: <SiPhp className="w-5 h-5 text-purple-500" /> },
         { name: "Python", icon: <SiPython className="w-5 h-5 text-blue-600" /> },
+        { name: "FastAPI", icon: <SiFastapi className="w-5 h-5 text-green-400" /> },
+        { name: "Django", icon: <SiDjango className="w-5 h-5 text-green-700" /> },
         { name: "REST API", icon: <span className="text-sm">🔄</span> },
       ]
     ],
     icon: <Server className="w-6 h-6 text-green-500" />,
   },
   {
-    category: "Database",
+    category: "Databases",
     items: [
       [
-        { name: "PostgreSQL", icon: <BiLogoPostgresql className="w-5 h-5 text-blue-600" /> },
         { name: "MySQL", icon: <SiMysql className="w-5 h-5 text-blue-700" /> },
+        { name: "PostgreSQL", icon: <BiLogoPostgresql className="w-5 h-5 text-blue-600" /> },
+        { name: "MongoDB", icon: <SiMongodb className="w-5 h-5 text-green-500" /> },
       ]
     ],
     icon: <Database className="w-6 h-6 text-purple-500" />,
@@ -75,8 +81,11 @@ const skills = [
       [
         { name: "Git", icon: <FaGitAlt className="w-5 h-5 text-orange-600" /> },
         { name: "Version Control", icon: <SiGit className="w-5 h-5 text-orange-500" /> },
-        { name: "Web Hosting", icon: <span className="text-sm">🌐</span> },
         { name: "Docker", icon: <SiDocker className="w-5 h-5 text-blue-500" /> },
+        { name: "Postman", icon: <SiPostman className="w-5 h-5 text-orange-500" /> },
+      ],
+      [
+        { name: "Web Hosting", icon: <span className="text-sm">🌐</span> },
         { name: "cPanel", icon: <SiCpanel className="w-5 h-5 text-orange-500" /> },
       ]
     ],
