@@ -21,11 +21,20 @@ const projects = [
     techStack: ["Next.js","Tailwind CSS","TypeScript"],
   },
   {
+    title: "Overlay Streamer",
+    description:
+      "Simple Video streamer app which gets an RTSP link, and stream the video and allows using overlays on the video, save, load overlay presets, customize the overlay text and logos/images.",
+    image: "/streamoverlay.png?height=200&width=300",
+    liveLink: "https://youtu.be/fKxNltPqP5A",
+    githubLink: "https://github.com/oldstone7/video_overlay_streamer",
+    techStack: ["React","Flask","Mongo DB","FFmpeg","Mediamtx"],
+  },
+  {
     title: "Smart AI Todo",
     description:
       "An AI-powered task management system that intelligently prioritizes,advices and enhances your tasks based on your daily context and workload.",
     image: "/smart_todo.png?height=200&width=300",
-    liveLink: null,
+    liveLink: "https://youtu.be/qe6HLa059co",
     githubLink: "https://github.com/oldstone7/smart_todo",
     techStack: ["Python FastAPI", "Streamlit", "Langchain", "Google’s genAI"],
   },

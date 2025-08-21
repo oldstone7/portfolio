@@ -11,6 +11,7 @@ import {
   SiStreamlit,
   SiDjango,
   SiFastapi,
+  SiFlask,
   SiExpress,
   SiPostgresql,
   SiMongodb,
@@ -54,12 +55,14 @@ const skills = [
         { name: "JavaScript", icon: <SiJavascript className="w-5 h-5 text-yellow-500" /> },
         { name: "Node.js", icon: <SiNodedotjs className="w-5 h-5 text-green-500" /> },
         { name: "Next.js", icon: <SiNextdotjs className="w-5 h-5 text-black dark:text-white" /> },
+        { name: "REST API", icon: <span className="text-sm">🔄</span> },
       ],
       [
         { name: "Python", icon: <SiPython className="w-5 h-5 text-blue-600" /> },
         { name: "FastAPI", icon: <SiFastapi className="w-5 h-5 text-green-400" /> },
         { name: "Django", icon: <SiDjango className="w-5 h-5 text-green-700" /> },
-        { name: "REST API", icon: <span className="text-sm">🔄</span> },
+        { name: "Flask", icon: <SiFlask className="w-5 h-5 text-green-400" /> },
+
       ]
     ],
     icon: <Server className="w-6 h-6 text-green-500" />,
