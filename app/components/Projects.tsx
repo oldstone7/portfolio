@@ -9,7 +9,7 @@ const projects = [
     image: "/calendarbot.png?height=200&width=300",
     liveLink: "https://calendarbot-tailortalk.streamlit.app/",
     githubLink: "https://github.com/oldstone7/calendarbot",
-    techStack: ["Python FastAPI", "Streamlit", "Langchain", "Google’s genAI"],
+    techStack: ["Python FastAPI", "Streamlit", "Langchain", "Google gemini API"],
   },
   {
     title: "AdmyBrand SaaS",
@@ -27,7 +27,7 @@ const projects = [
     image: "/streamoverlay.png?height=200&width=300",
     liveLink: "https://youtu.be/fKxNltPqP5A",
     githubLink: "https://github.com/oldstone7/video_overlay_streamer",
-    techStack: ["React","Flask","Mongo DB","FFmpeg","Mediamtx"],
+    techStack: ["React","Flask","MongoDB","FFmpeg","Mediamtx"],
   },
   {
     title: "Smart AI Todo",
@@ -36,7 +36,7 @@ const projects = [
     image: "/smart_todo.png?height=200&width=300",
     liveLink: "https://youtu.be/qe6HLa059co",
     githubLink: "https://github.com/oldstone7/smart_todo",
-    techStack: ["Python FastAPI", "Streamlit", "Langchain", "Google’s genAI"],
+    techStack: ["Python FastAPI", "Streamlit", "LangChain", "Google gemini API"],
   },
   {
     title: "CEO Dashboard",
@@ -44,7 +44,7 @@ const projects = [
     image: "/ceodb.png",
     liveLink: "https://ceodb-production.up.railway.app",
     githubLink: "https://github.com/oldstone7/ceodb",
-    techStack: ["HTML", "CSS", "JavaScript", "Django REST Framework", "PostgreSQL"],
+    techStack: ["HTML", "CSS", "JavaScript", "Django REST Framework", "SQLite"],
   },
   {
     title: "GameStore",
