@@ -47,6 +47,14 @@ const projects = [
     techStack: ["HTML", "CSS", "JavaScript", "Django REST Framework", "SQLite"],
   },
   {
+    title: "BookStore",
+    description: "Marketplace for buying and selling books with seller dashboard and order management.",
+    image: "/bookstore.jpg?height=200&width=300",
+    liveLink: "https://youtu.be/E4DrTNhDnVA?si=4QX20CiBgcxmF361",
+    githubLink: "https://github.com/oldstone7/Bookstore",
+    techStack: ["React Native (Expo)", "Node.js", "PostgreSQL"],
+  },
+  {
     title: "GameStore",
     description:
       "A React-based web application showcasing a collection of games with details and specifications using a third party API",
@@ -74,13 +82,15 @@ export default function Projects() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {projects.map((project) => (
             <div key={project.title} className="bg-gray-50 dark:bg-gray-800 rounded-lg shadow-md overflow-hidden">
-              <Image
-                src={project.image || "/placeholder.svg"}
-                alt={project.title}
-                width={300}
-                height={200}
-                className="w-full h-48 object-cover"
-              />
+              <div className="w-full h-48 bg-gray-100 dark:bg-gray-700 flex items-center justify-center overflow-hidden">
+                <Image
+                  src={project.image || "/placeholder.svg"}
+                  alt={project.title}
+                  width={300}
+                  height={400}
+                  className={`w-auto max-w-full h-auto max-h-full ${project.title === 'BookStore' ? 'object-contain' : 'object-cover'}`}
+                />
+              </div>
               <div className="p-6">
                 <h3 className="text-xl font-semibold text-gray-800 dark:text-white mb-2">{project.title}</h3>
                 <p className="text-gray-600 dark:text-gray-300 mb-4">{project.description}</p>
@@ -132,4 +142,3 @@ export default function Projects() {
     </section>
   )
 }
-

@@ -23,7 +23,8 @@ import {
   SiGit,
   SiDocker,
   SiCpanel,
-  SiPostman
+  SiPostman,
+  SiReact as SiReactNative
 } from "react-icons/si"
 import { FaGitAlt } from "react-icons/fa"
 import { BiLogoPostgresql } from "react-icons/bi"
@@ -40,8 +41,9 @@ const skills = [
       ],
       [
         { name: "React", icon: <SiReact className="w-5 h-5 text-blue-400" /> },
+        { name: "React Native", icon: <SiReactNative className="w-5 h-5 text-blue-400" /> },
         { name: "jQuery", icon: <SiJquery className="w-5 h-5 text-blue-700" /> },
-        { name: "Bootstrap", icon: <SiBootstrap className="w-5 h-5 text-purple-600" /> },
+        //{ name: "Bootstrap", icon: <SiBootstrap className="w-5 h-5 text-purple-600" /> },
         { name: "Tailwind CSS", icon: <SiTailwindcss className="w-5 h-5 text-teal-500" /> },
       ]
     ],
