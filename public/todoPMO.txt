@@ -1,0 +1,92 @@
+README.md — Anti-PMO App Blueprint
+Project Overview:
+
+The Anti-PMO mobile app is designed to help users block pornography, nudity, adult content, and related thirst traps
+ across social media, browsers, and apps, while preventing bypass through VPNs or system setting changes, when 
+ urges hits. It employs multi-layered technical enforcement combined with an accountability framework involving 
+ a trusted partner.
+
+
+Section 1 – Core Security & Lock Features
+
+1.1 PIN Lock System
+
+On first launch, app prompts user to set a 6–8 digit PIN.
+
+PIN is stored securely in local storage.
+
+Every time app is opened, PIN entry screen appears first.
+
+Lock also triggers if app is opened via recent apps screen or in any way.
+
+
+1.2 DNS Enforcement Support
+
+App does not force DNS itself.
+
+Instead, the partner or user sets up DNS via their mobile Settings > Network Settings > enter their private DNS address which is,
+family.cloudflare-dns.com (1.1.1.3 and 1.0.0.3) but our app needs to block access to only the specific part of the settings where DNS configuration
+ can be done by locking the Network Settings section on Settings app (Every other settings part should be available for use, except the network settings part,
+ which asks the pin as soon as the network settings is clicked) but other sections like Display, Profile/personalization and everything else.
+
+
+1.3 App Info Protection
+
+Prevents tampering (Force Stop, Clear Data, Uninstall).
+
+When user tries to access App Info page of any app, the lock screen appears → requires PIN to continue.
+We want to implement prevention of users force stopping, disabling or clear data of our app.
+
+
+1.4 PIN Management
+
+Our PMO App should have settings page which include a “Change PIN” option.
+
+To change PIN: user must enter old PIN first, then create a new 6–8 digit PIN with retype pin again verification.
+
+
+Section 2 – App Protection & Monitoring
+
+
+2.1 Installation Lock (Preventing New Apps)
+
+The app monitors the Package Installer using Accessibility Service.
+
+Whenever a new app installation is initiated, a lock screen prompt will appear requiring the PIN.
+and if the user already clicked the install for an app, we should cancel the install.
+
+User could never be able to install anything on this app without the pin.
+Without the correct PIN, installation is blocked.
+
+This prevents users from installing VPNs, alternate browsers, or apps that could bypass restrictions.
+
+Note: Only installations are blocked. Uninstalling other apps (games, social apps, unused apps, etc.) remains free and unhindered for the user.
+Meaning we shouldn't lock the package installer. Uninstall should happen freely (except our own app) and installation only should be blocked.
+Uninstall Protection (Only for Anti-PMO App)
+
+Our Anti-PMO app itself cannot be uninstalled easily.
+
+This is achieved by making the app a Device Admin App.
+
+To disable or uninstall, the user must first deactivate admin rights from within the app settings, which requires the PIN to enter the app in the
+first place.
+
+This ensures that even tech-savvy users cannot bypass protections without knowing the PIN.
+
+2.2 Blocking Accessibility Settings Page
+
+The Accessibility Service is critical for monitoring installs and VPN usage.
+
+To prevent the user from disabling it, the app blocks access to the Accessibility Service settings page in the device Settings app.
+
+Other parts of Settings remain usable, only this page is locked.
+
+2.3 Accountability Notifications
+
+To involve the accountability partner effectively, the app sends SMS or instant notifications in these cases:
+
+Wrong PIN Attempt → If someone tries to enter a wrong PIN, the partner is alerted.
+
+New App Installed → Every successful app installation notifies the partner.
+
+These alerts help partners keep the user accountable in real-time.
