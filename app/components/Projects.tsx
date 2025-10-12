@@ -39,14 +39,6 @@ const projects = [
     techStack: ["Python FastAPI", "Streamlit", "LangChain", "Google gemini API"],
   },
   {
-    title: "CEO Dashboard",
-    description: "An admin dashboard for monitoring key performance indicators and tracking company's performance with finance, sales and operations modules.",
-    image: "/ceodb.png",
-    liveLink: "https://ceodb-production.up.railway.app",
-    githubLink: "https://github.com/oldstone7/ceodb",
-    techStack: ["HTML", "CSS", "JavaScript", "Django REST Framework", "SQLite"],
-  },
-  {
     title: "BookStore",
     description: "Marketplace for buying and selling books with seller dashboard and order management.",
     image: "/bookstore.jpg?height=200&width=300",
